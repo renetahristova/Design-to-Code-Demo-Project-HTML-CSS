@@ -10,6 +10,17 @@ body {
   padding: 5px 14px;
   border-radius: 20px;
 }
+.btn-outline {
+  color: #a15dc6;
+  border: 1px solid #a15dc6;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 7px 12px;
+  font-size: 17px;
+}
+.btn:hover {
+  cursor: pointer;
+}
 h1,
 h2,
 h3,
@@ -50,13 +61,14 @@ header nav ul {
 .diploma-and-certifications {
   padding: 50px 5%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   justify-content: space-between;
 }
 .diploma-and-certifications-content {
   flex-basis: 65%;
 }
-.diploma-and-certifications-title {
+h2 {
   font-family: 500;
 }
 .diploma-and-certifications-title-note {
@@ -72,6 +84,13 @@ header nav ul {
   border-radius: 50%;
   z-index: -1;
 }
+
+.diploma-and-certifications-image-award img {
+  position: relative;
+  left: 170px;
+  top: 20px;
+}
+
 @media all and (max-width: 1100px) {
   .diploma-and-certifications {
     flex-direction: column;
@@ -80,9 +99,77 @@ header nav ul {
     display: none;
   }
 }
-
-.diploma-and-certifications-image-award img {
+.cpe-certificate {
+  background: #14162b;
+  color: white;
+  padding: 50px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cpe-certificate-content {
+  flex-basis: 70%;
+}
+.cpe-certificate-image {
   position: relative;
-  left: 170px;
-  top: 20px;
+  top: 90px;
+}
+@media all and (max-width: 1100px) {
+  .cpe-certificate {
+    flex-direction: column;
+  }
+}
+.career-center {
+  padding: 50px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.career-center-content {
+  padding-left: 35px;
+}
+.career-center-content p {
+  padding-bottom: 52px;
+}
+@media all and (max-width: 1100px) {
+  .career-center {
+    flex-direction: column;
+  }
+  .career-center-content {
+    order: 1;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  .career-center-content-title .career-center-content p {
+    text-align: left;
+  }
+  .career-center-content-image {
+    order: 2;
+  }
+}
+footer {
+  background: #2c2c3a;
+  display: flex;
+  padding: 50px 5%;
+  justify-content: space-between;
+  color: white;
+}
+footer h3 {
+  color: #985bc0;
+}
+footer ul {
+  padding: 0;
+}
+footer ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+.social-media-icons {
+  font-size: 35px;
+  margin: 13px;
+}
+@media all and (max-width: 1100px) {
+  footer {
+    flex-wrap: wrap;
+  }
 }
